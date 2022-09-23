@@ -7,23 +7,22 @@
     tools:context=".MainActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="305dp"
-        android:layout_height="267dp"
-        android:layout_marginStart="84dp"
+        android:layout_width="289dp"
+        android:layout_height="362dp"
+        android:layout_marginStart="32dp"
         android:layout_marginTop="107dp"
-        android:layout_marginEnd="84dp"
+        android:layout_marginEnd="32dp"
         android:layout_marginBottom="398dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.853">
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginStart="24dp"
-            android:layout_marginEnd="24dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
             android:orientation="vertical"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -42,8 +41,8 @@
                     android:autoSizeMaxTextSize="30sp"
                     android:autoSizeMinTextSize="20sp"
                     android:text="@string/app_name"
-                    android:textColor="@color/green_200"
-                    android:textSize="24sp"
+                    android:textColor="@color/green_500"
+                    android:textSize="28sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -55,7 +54,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/description"
                     android:textColor="@android:color/darker_gray"
-                    android:textSize="14sp"
+                    android:textSize="21sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -66,15 +65,15 @@
             <EditText
                 android:id="@+id/etInputNumber"
                 android:layout_width="match_parent"
-                android:layout_height="20dp"
+                android:layout_height="wrap_content"
                 android:layout_marginLeft="40dp"
                 android:layout_marginRight="40dp"
                 android:ems="10"
-                android:hint="87, 54, 631 ..."
+                android:hint="5, 10, 14"
                 android:inputType="number"
                 android:textAlignment="textStart"
                 android:textColor="@color/green_700"
-                android:textSize="14sp" />
+                android:textSize="21sp" />
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
@@ -83,15 +82,15 @@
                 <Button
                     android:id="@+id/button"
                     style="@android:style/Widget.Material.Button"
-                    android:layout_width="115dp"
-                    android:layout_height="45dp"
+                    android:layout_width="147dp"
+                    android:layout_height="60dp"
                     android:layout_marginStart="110dp"
                     android:layout_marginTop="16dp"
                     android:layout_marginEnd="110dp"
                     android:layout_marginBottom="19dp"
                     android:backgroundTint="@color/gray"
                     android:text="@string/btn_text"
-                    android:textSize="12sp"
+                    android:textSize="18sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -100,22 +99,22 @@
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="140dp">
 
                 <TextView
                     android:id="@+id/tvResult"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="58dp"
-                    android:layout_marginTop="16dp"
                     android:layout_marginEnd="58dp"
                     android:layout_marginBottom="25dp"
                     android:textSize="30sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintHorizontal_bias="0.496"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.373" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
         </LinearLayout>
