@@ -20,8 +20,13 @@ public class MainActivity extends AppCompatActivity {
         TextView tvResult = findViewById(R.id.tvResult);
 
         button.setOnClickListener(v -> {
-            long number = Long.parseLong(etInputNumber.getText().toString());
-            tvResult.setText(String.valueOf(factorial(number)));
+            long number;
+            String numFact = etInputNumber.getText().toString();
+
+            if (!numFact.equals("")){
+                number = Long.parseLong(numFact);
+                tvResult.setText(String.valueOf(factorial(number)));
+            }
         });
 
     }
@@ -34,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
             }
             if (result <= 0) {
                 Toast.makeText(this, getString(R.string.numberNotValid), Toast.LENGTH_SHORT).show();
-                return -1;
+                return 0;
             }
             else{
                 return result;
@@ -42,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
         }
         else{
             Toast.makeText(this, getString(R.string.numberNotValid),Toast.LENGTH_SHORT).show();
-            return result = -1;
+            return 0;
         }
     }
 }
